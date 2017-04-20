@@ -1,0 +1,133 @@
+.hexahedron {
+	
+	&-theme {
+		
+	}
+	
+	&-logo {
+		max-width:100%;
+		max-height:100%;
+		#site.w(295px);
+		#site.h(92.169px);
+		
+		@keyframes hexahedron-animation__dash-grid {
+			0% {
+				stroke-dashoffset:144;
+			}
+			100% {
+				stroke-dashoffset:0;
+			}
+		}
+		@keyframes hexahedron-animation__dash-1 {
+			0% {
+				stroke-dashoffset:173.2056;
+				stroke-width:2;
+			}
+			100% {
+				stroke-dashoffset:0;
+				stroke-width:6;
+			}
+		}
+		@keyframes hexahedron-animation__dash-2 {
+			0% {
+				stroke-dashoffset:173.2056;
+				stroke-width:2;
+			}
+			100% {
+				stroke-dashoffset:0;
+				stroke-width:6;
+			}
+		}
+		@keyframes hexahedron-animation__dash-3 {
+			0% {
+				stroke-dashoffset:202.0732;
+				stroke-width:2;
+			}
+			100% {
+				stroke-dashoffset:0;
+				stroke-width:6;
+			}
+		}
+		@keyframes hexahedron-animation__dash-4 {
+			0% {
+				stroke-dashoffset:144.338;
+				stroke-width:2;
+			}
+			100% {
+				stroke-dashoffset:0;
+				stroke-width:6;
+			}
+		}
+		
+		.line {
+			transition:all 0.4s ease;
+		}
+		#hexahedron-logo__box .line {
+			opacity:0;
+			stroke-width:0.25;
+			stroke:rgba(0,0,0,.5);
+		}
+		#hexahedron-logo__grid .line {
+			stroke-width:0.25;
+			/*stroke:rgba(0,255,0,1);*/
+			stroke:rgba(0,0,0,0.3);
+			animation-duration:1.25s;
+			animation-timing-function:linear;
+			animation-fill-mode:forwards;
+			animation-iteration-count:1;
+			animation-delay:0s;
+			animation-name:hexahedron-animation__dash-grid;
+			stroke-dasharray:144;
+			stroke-dashoffset:144;
+			fill: none;
+		}
+		#hexahedron-logo__text .line {
+			stroke-width:2;
+			/*stroke:rgba(0,0,0,1);*/
+			stroke:#7ba83f;
+			stroke-linejoin: round;
+			stroke-linecap: round;
+			animation-duration:1.25s;
+			animation-timing-function:ease-out;
+			animation-fill-mode:forwards;
+			animation-iteration-count:1;
+			animation-delay:0s;
+			fill:none;
+			transition:all 0.3s ease;
+			pointer-events:auto;
+			
+			&:hover {
+				/*stroke-width:5;*/
+				stroke:#932ea8;
+			}
+			
+			&:nth-child(1) {
+				animation-delay:1.25s;
+				animation-name:hexahedron-animation__dash-1;
+				stroke-dasharray:173.2056;
+				stroke-dashoffset:173.2056;
+			}
+			&:nth-child(2) {
+				animation-delay:1.75s;
+				animation-name:hexahedron-animation__dash-2;
+				stroke-dasharray:173.2056;
+				stroke-dashoffset:173.2056;
+			}
+			&:nth-child(3) {
+				animation-delay:2.50s;
+				animation-name:hexahedron-animation__dash-3;
+				stroke-dasharray:202.0732;
+				stroke-dashoffset:202.0732;
+			}
+			&:nth-child(4) {
+				animation-delay:3.25s;
+				animation-name:hexahedron-animation__dash-4;
+				stroke-dasharray:144.338;
+				stroke-dashoffset:144.338;
+			}
+			
+		}
+		
+	}
+	
+}

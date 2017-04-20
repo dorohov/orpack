@@ -1,0 +1,65 @@
+.submit-block {
+	margin:1em 0 2em;
+	display:none;
+	#site.size(1rem);
+	
+	&[data-input-status="ok"], &[data-input-status="1"] {
+		display:block;
+	}
+	
+	&__help {
+		opacity:0;
+		display:inline-block;
+		margin-left:1.5em;
+		transition:all @trans-speed / 1.25 ease;
+		#site.size(2em);
+		#site.italic();
+		#site.color(#999999);
+		
+		@media @media-max-991 {
+			& {
+				display:none;
+			}
+		}
+		
+	}
+	
+	input[type="submit"] {
+		.cleardefault();
+		transition:all @trans-speed / 1.25 ease;
+		display:inline-block;
+		padding:1em 1.5em;
+		border-radius:0px;
+		border:1px transparent solid;
+		cursor:pointer;
+		#site.size(1.75em);
+		#site.bold();
+		#site.uppercase();
+		
+		&:focus {
+			outline:none;
+		}
+		
+		&:hover {
+			border-color:#de74f5;
+			#site.color(#ffffff);
+			#site.bg(green);
+			
+			& + .submit-block__help {
+				opacity:1;
+			}
+		}
+		
+		&, &[data-style="default"] {
+			#site.color(#ffffff);
+			#site.bg(@c-input-main-border);
+		}
+		
+		/*
+		&._xs__fullwidth {
+			#site.w(100%);
+		}
+		*/
+	}
+	
+}

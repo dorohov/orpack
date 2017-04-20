@@ -1,0 +1,22 @@
+	
+	.loadFont(@family : Arial, @type : reg, @name : font){
+		@font-face{
+			font-family: '@{family}-@{type}';
+			
+			src:url('@{url-path-fonts}/@{family}/@{type}/@{name}.eot');
+			src:url('@{url-path-fonts}/@{family}/@{type}/@{name}.eot?#iefix') format('embedded-opentype'),
+				url('@{url-path-fonts}/@{family}/@{type}/@{name}.woff') format('woff'),
+				url('@{url-path-fonts}/@{family}/@{type}/@{name}.ttf') format('truetype'),
+				url('@{url-path-fonts}/@{family}/@{type}/@{name}.svg#@{family}-@{type}') format('svg');
+			font-weight: normal;
+			font-style: normal;
+			
+		}
+	}
+	
+	//.loadFont('gost_a');
+	.loadFont('GostB');
+	
+	//@import url(https://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic);
+	//@import url(https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic);
+	
