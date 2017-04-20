@@ -4,7 +4,7 @@
 	var block = $.Azbn7.body.find('.header-menu');
 	
 	if(block.length) {
-		
+		/*
 		var btn = block.find('.header-menu-btn');
 		var _list = block.find('.items._list');
 		var _visible = block.find('.items._visible');
@@ -16,7 +16,7 @@
 			_hidden.toggleClass('_active');
 			
 		});
-		
+		*/
 	}
 	
 })();

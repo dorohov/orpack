@@ -1,4 +1,15 @@
 .layout-footer {
-	border-top:1px @c-layout-main-border solid;
-	#site.bg(@c-layout-main-bg);
+	
+	.copyright {
+		display:block;
+		margin:20px auto;
+		#site.color(#999999);
+		#site.size(12px);
+		#site.uppercase();
+		
+		&:hover {
+			#site.color(@c-main-color);
+		}
+	}
+	
 }

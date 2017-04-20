@@ -1,0 +1,1 @@
+"use strict";!function(n){n.Azbn7&&(n.Azbn7.mdl("fnc").include("/js/azbn7/mdl/api.mdl.js",function(){n.Azbn7.mdl("API").setConfig(JSON.parse(n.Azbn7.body.attr("data-azbn7__mdl__api")||"{}"))}),n.Azbn7.mdl("fnc").include("/js/azbn7/mdl/codecache.mdl.js",function(){n.Azbn7.mdl("CodeCache").doUpdate(1e4)}))}(jQuery);
