@@ -2,7 +2,7 @@
 
 (function($){
 	
-	$.noConflict();
+	//$.noConflict();
 	
 	window.onerror = function(error, url, lineNumber, column, errorObj) {
 		console.log('Error FECSS: ' + url + ':' + lineNumber + ':' + column + ': ' + JSON.stringify(error) + '\n' + JSON.stringify(errorObj));

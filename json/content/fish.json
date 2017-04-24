@@ -53,6 +53,7 @@
 		"css" : "/css",
 		"js" : "/js",
 		"fonts" : "/fonts",
-		"plugins" : "/plugins"
+		"plugins" : "/plugins",
+		"favicons" : "/favicons"
 	}
 }
