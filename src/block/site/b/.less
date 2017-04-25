@@ -1,9 +1,17 @@
 #product-roller .viewer {
 	//background-image:url(test_10x10.jpg);
-	margin:20px auto;
+	margin:0px auto;
+	position:relative;
+	transform-origin:center center;
 	#site.w(440px);
 	#site.h(334px);
 	#site.brep();
 	#site.bg(#000000);
-	#site.bi('common/test_10x10.jpg');
+	#site.z(2);
+	//#site.bi('common/test_10x10.jpg');
+	
+	@media @media-size-xs {
+		transform:scale(0.7);
+		margin:0px;
+	}
 }

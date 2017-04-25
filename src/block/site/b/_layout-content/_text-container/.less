@@ -1,0 +1,45 @@
+.text-container {
+	align-content:inherit;
+	#site.color(#ffffff);
+	
+	&._contact {
+		#site.color(#999999);
+	}
+	
+	@media @media-size-xs {
+		margin:60px 0 0;
+	}
+	
+	@media @media-size-sm {
+		margin:60px 0 0;
+	}
+	
+	h1 {
+		letter-spacing:3px;
+		margin-bottom:65px;
+		#site.calcFS(36, 60);
+		#site.bold(700);
+		#site.color(#ffffff);
+	}
+	
+	p {
+		margin-bottom:40px;
+		#site.size(18px);
+	}
+	
+	a {
+		#site.color(#0099ff);
+		#site.underline(none);
+		
+		&:hover {
+			#site.underline();
+		}
+	}
+	
+	.p__title {
+		display:block;
+		#site.uppercase;
+		#site.color(#ffffff);
+	}
+	
+}

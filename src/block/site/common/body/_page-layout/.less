@@ -1,5 +1,20 @@
 .page-layout {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	
+	@media @media-size-xs {
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content:flex-start;
+		overflow:inherit;
+	}
+	
+	@media @media-size-sm {
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content:flex-start;
+		overflow:inherit;
+	}
+	
 }

@@ -1,4 +1,5 @@
 .header-menu {
+	padding:0 10px;
 	position:relative;
 	display:flex;
 	flex-direction:row;
@@ -8,24 +9,130 @@
 	#site.w(100%);
 	#site.h(100%);
 	
+	@media @media-size-xs {
+		flex-wrap:wrap;
+	}
+	
+	@media @media-size-sm {
+		flex-wrap:wrap;
+	}
+	
 	.item {
 		display:flex;
 		flex-direction:row;
 		justify-content:space-between;
+		
+		&._active {
+			a {
+				#site.color(#ffffff);
+			}
+		}
+		
 	}
 	
-	& > .item:nth-child(1) .item a {
-		margin-right:40px;
-	}
-	& > .item:last-child img {
-		margin-top: 15px;
+	& > .item {
+		
+		@media @media-size-xs {
+			#site.w(50%);
+		}
+		
+		@media @media-size-sm {
+			#site.w(50%);
+		}
+		
+		&:nth-child(1) {
+			flex-wrap:wrap;
+			padding:15px 0;
+			
+			@media @media-size-sm {
+				#site.w(70%);
+			}
+			
+			.item {
+				
+				@media @media-size-xs {
+					//padding:0 10px;
+					#site.w(100%);
+				}
+				
+				@media @media-size-sm {
+					//padding:0 10px;
+					#site.w(33.33333333%);
+				}
+				
+				a {
+					margin-right:40px;
+					
+					@media @media-size-sm {
+						margin-right:15px;
+					}
+				}
+			}
+		}
+		
+		&:nth-child(2) {
+			
+			@media @media-size-xs {
+				padding:10px 0;
+				order:3;
+				text-align:center;
+				#site.w(100%);
+				
+				.item {
+					text-align:center;
+					justify-content:space-around;
+					#site.w(100%);
+				}
+			}
+			
+			@media @media-size-sm {
+				padding:10px 0;
+				order:3;
+				text-align:center;
+				#site.w(100%);
+				
+				.item {
+					text-align:center;
+					justify-content:space-around;
+					#site.w(100%);
+				}
+			}
+			
+		}
+		
+		
+		&:last-child {
+			
+			@media @media-size-xs {
+				//padding-right:10px;
+				justify-content:flex-end;
+				order:2;
+			}
+			
+			@media @media-size-sm {
+				//padding-right:10px;
+				justify-content:flex-end;
+				order:2;
+				#site.w(30%);
+			}
+			
+			img {
+				margin-top: 15px;
+			}
+			
+		}
+		
+		@media @media-size-xs {
+			order:2;
+		}
+		
 	}
 	
 	a {
 		display:inline-flex;
 		align-items: center;
 		vertical-align:middle;
-		#site.size(18px);
+		#site.calcFS(14, 18);
 		#site.uppercase();
 		#site.h(100%);
 	}
