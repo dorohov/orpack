@@ -38,13 +38,13 @@ wp_head();
 <header class="layout-header {{class}} " >
 	<div class="header-menu b-container _limit-width" >
 		<div class="item" >
-			<div class="item" >
+			<div class="item <?if($this->post['id'] == 1){echo '_active';}?> " >
 				<a href="<?=l(1);?>" >Продукция</a>
 			</div>
-			<div class="item _active" >
+			<div class="item <?if($this->post['id'] == 1){echo '_active';}?> " >
 				<a href="<?=l(31);?>" >О компании</a>
 			</div>
-			<div class="item" >
+			<div class="item <?if($this->post['id'] == 1){echo '_active';}?> " >
 				<a href="<?=l(39);?>" >Контакты</a>
 			</div>
 		</div>
