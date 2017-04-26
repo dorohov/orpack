@@ -1,28 +1,20 @@
-<meta charset="utf-8" >
 
+<meta charset="utf-8" >
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<title>
-<?
-if(is_category()) {
-	single_cat_title();
-} else {
-	the_title();
-}
-?>
-</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
+<title><? wp_title();?></title>
 
-
+<meta name="referrer" content="never">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!--
+<meta name="document-state" content="Dynamic" />
+<meta name="resource-type" content="document" />
+-->
+
 <meta HTTP-EQUIV="Cache-Control" content="no-cache" />
-
-<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
-<link type="image/x-icon" href="/favicon.ico" rel="icon" />
-
-<link href="<?php echo $this->path('css');?>/bootstrap/bootstrap.css" rel="stylesheet">
-<link href="<?php echo $this->path('css');?>/site.css?update=<?=date("Ymd");?>" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -30,16 +22,4 @@ if(is_category()) {
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-
-<script src="https://yastatic.net/jquery/2.1.4/jquery.min.js"></script>
-<script>
-if(typeof window.jQuery === 'undefined') {
-	document.write(
-	unescape("%3Cscript src='<?php echo $this->path('js');?>/jquery.min.js' type='text/javascript'%3E%3C/script%3E")
-	);
-}
-</script>
-<script src="<?php echo $this->path('js');?>/bootstrap.min.js" ></script>
-<script src="<?php echo $this->path('js');?>/storage.js" ></script>
-
-<script src="<?php echo $this->path('js');?>/document-ready.js" ></script>
+<link href="<?=$this->path('css');?>/azbn7-preloader.css" rel="stylesheet" />

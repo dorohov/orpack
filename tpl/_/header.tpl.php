@@ -34,6 +34,27 @@ wp_head();
 <!--[[ azbntple tpl="/src/block/azbn7/b/_azbn7-preloader/.html" ]]-->
 
 <div class="page-layout" >
-	
-	[[azbntple tpl="/src/block/site/common/header/.html" ]]
-	
+
+<header class="layout-header {{class}} " >
+	<div class="header-menu b-container _limit-width" >
+		<div class="item" >
+			<div class="item" >
+				<a href="<?=l(1);?>" >Продукция</a>
+			</div>
+			<div class="item _active" >
+				<a href="<?=l(31);?>" >О компании</a>
+			</div>
+			<div class="item" >
+				<a href="<?=l(39);?>" >Контакты</a>
+			</div>
+		</div>
+		<div class="item" >
+			<div class="item" >
+				<a href="<?=$this->getMeta(1, 'product_catalog_download');?>" class="_blue" >Полный каталог продукции</a>
+			</div>
+		</div>
+		<div class="item" >
+			<a href="<?=l(1);?>" ><img src="<?=$this->path('img');?>/common/site-logo.png" /></a>
+		</div>
+	</div>
+</header>
