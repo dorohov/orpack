@@ -41,10 +41,10 @@ wp_head();
 			<div class="item <?if($this->post['id'] == 1){echo '_active';}?> " >
 				<a href="<?=l(1);?>" >Продукция</a>
 			</div>
-			<div class="item <?if($this->post['id'] == 1){echo '_active';}?> " >
+			<div class="item <?if($this->post['id'] == 31){echo '_active';}?> " >
 				<a href="<?=l(31);?>" >О компании</a>
 			</div>
-			<div class="item <?if($this->post['id'] == 1){echo '_active';}?> " >
+			<div class="item <?if($this->post['id'] == 39){echo '_active';}?> " >
 				<a href="<?=l(39);?>" >Контакты</a>
 			</div>
 		</div>
