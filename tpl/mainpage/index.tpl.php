@@ -1,8 +1,8 @@
 <?
 
-function __theme__product__tpl($p = new stdClass()) {
-	
-	$model3d = $this->getMeta($p->ID, 'model3d');
+function __theme__product__tpl($p) {
+	global $Azbn;
+	$model3d = get_field('model3d', $p->ID);
 
 ?>
 
@@ -10,7 +10,7 @@ function __theme__product__tpl($p = new stdClass()) {
 	<div class="item__content" >
 		<div class="left" >
 			<div class="code" ><?=$p->post_title;?></div>
-			<div class="title" ><?=$this->getMeta($p->ID, 'product-add-title');?></div>
+			<div class="title" ><?=$Azbn->getMeta($p->ID, 'product-add-title');?></div>
 			<div class="line" ></div>
 			<div class="_bottom-div" >
 				<div class="description" >
@@ -21,12 +21,12 @@ function __theme__product__tpl($p = new stdClass()) {
 		<div class="right" >
 			<div class="code" >&nbsp;</div>
 			<div class="download _white" >
-				<a href="<?=$this->getMeta($p->ID, 'product-pdf-material');?>" download="" >Информация о сырье</a>
+				<a href="<?=get_field('product-pdf-material', $p->ID);?>" download="" >Информация о сырье</a>
 			</div>
 			<div class="line" ></div>
 			<div class="_bottom-div" >
 				<div class="download _blue" >
-					<a href="<?=$this->getMeta($p->ID, 'product-pdf-material');?>" download="" >Технические данные</a>
+					<a href="<?=get_field('product-pdf-tech', $p->ID);?>" download="" >Технические данные</a>
 				</div>
 				
 				<?
@@ -44,7 +44,7 @@ function __theme__product__tpl($p = new stdClass()) {
 				
 			</div>
 		</div>
-		<a href="#roll-<?=$p->ID;?>" class="center js-click" style="background-image:url(<?=$this->Imgs->postImg($p->ID);?>);" ></a>
+		<a href="#roll-<?=$p->ID;?>" class="center js-click" style="background-image:url(<?=$Azbn->Imgs->postImg($p->ID);?>);" ></a>
 	</div>
 </div>
 
