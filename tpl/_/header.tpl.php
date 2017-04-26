@@ -50,7 +50,7 @@ wp_head();
 		</div>
 		<div class="item" >
 			<div class="item" >
-				<a href="<?=$this->getMeta(1, 'product_catalog_download');?>" class="_blue" >Полный каталог продукции</a>
+				<a href="<?=get_field('product_catalog_download', 1);?>" class="_blue" >Полный каталог продукции</a>
 			</div>
 		</div>
 		<div class="item" >
