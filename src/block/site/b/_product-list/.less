@@ -1,0 +1,22 @@
+.product-list {
+	margin-bottom:40px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:space-between;
+	align-content:flex-start;
+	//#site.calcFS(64, 100);
+	#site.size(15px);
+	#site.color(#999999);
+	
+	& > * {
+		padding-right:40px;
+	}
+	
+	.product-link {
+		&._active, &:hover {
+			#site.color(@c-main-color);
+		}
+	}
+	
+}

@@ -8,6 +8,7 @@
 			
 			var btn = $(this);
 			var item = btn.closest('.item');
+			var post_id = parseInt(item.attr('data-post-id') || 0);
 			var cont = item.closest('.roll-container');
 			
 			var _active = cont.find('.item._active');
@@ -24,6 +25,10 @@
 			if(!_is_active) {
 				
 				if(_active.length) {
+					
+					$('.product-list .product-link.js-click').removeClass('_active');
+					
+					$('.product-list .product-link.js-click[data-post-id="' + post_id + '"]').addClass('_active');
 					
 					cont.find('.item._active').removeClass('_active');
 					
@@ -54,6 +59,8 @@
 			} else {
 				
 				cont.find('.item._active').removeClass('_active');
+				
+				$('.product-list .product-link.js-click').removeClass('_active');
 				
 			}
 			
