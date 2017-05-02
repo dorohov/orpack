@@ -31,7 +31,17 @@ wp_head();
 	data-azbn7__mdl__api='{"request_method":"POST","access_as":"profile","key":""}'
 	>
 
-<!--[[ azbntple tpl="/src/block/azbn7/b/_azbn7-preloader/.html" ]]-->
+<div class="azbn7-preloader _site-preloader" data-time-limit="3142" >
+	
+	<a href="#" class="azbn7-preloader__cancel-btn" >
+		
+		<svg class="site-preloader__svg" viewBox="0 0 200 200" >
+			<circle class="path" cx="100" cy="100" r="97" />
+		</svg>
+		
+	</a>
+		
+</div>
 
 <div class="page-layout" >
 
