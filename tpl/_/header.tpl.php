@@ -48,11 +48,21 @@ wp_head();
 				<a href="<?=l(39);?>" >Контакты</a>
 			</div>
 		</div>
+		
+		<?
+		$file = get_field('product_catalog_download', 1);
+		if($file != '') {
+			$size = getAttSize($file);
+		?>
 		<div class="item" >
 			<div class="item" >
-				<a href="<?=get_field('product_catalog_download', 1);?>" class="_blue" >Полный каталог продукции</a>
+				<a href="<?=$file;?>" class="_blue" >Полный каталог продукции (<?=$size;?>Mb)</a>
 			</div>
 		</div>
+		<?
+		}
+		?>
+		
 		<div class="item" >
 			<a href="<?=l(1);?>" ><img src="<?=$this->path('img');?>/common/site-logo.png" /></a>
 		</div>

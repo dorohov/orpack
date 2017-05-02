@@ -2,7 +2,7 @@
 <footer class="layout-footer {{class}} " >
 	<div class="footer-grid grid grid-12 b-container _limit-width" >
 		<div class="col-xs-12 col-sm-12 col-md-12 col-dl-12 col-lg-12 at-center" >
-			<div class="copyright" >2009-<?=date('Y');?> OOO “Орпласт”</div>
+			<div class="copyright" >2009-<?=date('Y');?> OOO «ОРПЛАСТ»</div>
 		</div>
 	</div>
 </footer>
@@ -18,6 +18,10 @@
 		
 		<div class="modal-content" >
 			<div class="viewer" ></div>
+			<div class="viewer-desc" >
+				<span class="title" ></span>
+				<span class="desc" ></span>
+			</div>
 		</div>
 	</div>
 </div>
