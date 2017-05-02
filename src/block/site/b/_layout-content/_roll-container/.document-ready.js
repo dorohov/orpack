@@ -218,20 +218,30 @@
 		if(product_model != '') {
 			//console.log(product_model);
 			
-			viewer
-				.css({
-					'background-image' : 'url(' + product_model + ')',
-				})
-			;
+			$.Azbn7.body.addClass('_preloading');
 			
-			desc.find('.title').html(_p_title);
-			desc.find('.desc').html(_p_desc);
-			
-			intr = setInterval(function(){
+			var _image = document.createElement('img');
+			_image.width = 0; _image.height = 0;
+			_image.setAttribute('src', product_model);
+			_image.onload = function(){
+				//document.body.appendChild(i);
 				
-				loadSprite(1);
+				viewer
+					.css({
+						'background-image' : 'url(' + product_model + ')',
+					})
+				;
 				
-			}, 90);
+				desc.find('.title').html(_p_title);
+				desc.find('.desc').html(_p_desc);
+				
+				intr = setInterval(function(){
+					loadSprite(1);
+				}, 90);
+				
+				$.Azbn7.body.removeClass('_preloading');
+				
+			};
 			
 			//loadSprite(1);
 			
