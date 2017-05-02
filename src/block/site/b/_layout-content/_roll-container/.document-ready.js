@@ -107,7 +107,8 @@
 
 (function(){
 	
-	var viewer = $('#product-roller .viewer').eq(0)
+	var viewer = $('#product-roller .viewer').eq(0);
+	var desc = $('#product-roller .viewer-desc').eq(0)
 	
 	var sprite_size = {
 		x : 440,
@@ -211,15 +212,28 @@
 		var product_id = parseInt(btn.attr('data-product-id'));
 		var product_model = btn.attr('data-product-model');
 		
+		var _p_title = btn.attr('data-product-title');
+		var _p_desc = btn.attr('data-product-desc');
+		
 		if(product_model != '') {
-			console.log(product_model);
+			//console.log(product_model);
+			
 			viewer
 				.css({
 					'background-image' : 'url(' + product_model + ')',
 				})
 			;
 			
-			loadSprite(1);
+			desc.find('.title').html(_p_title);
+			desc.find('.desc').html(_p_desc);
+			
+			intr = setInterval(function(){
+				
+				loadSprite(1);
+				
+			}, 90);
+			
+			//loadSprite(1);
 			
 		}
 		
