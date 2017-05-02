@@ -107,8 +107,10 @@
 
 (function(){
 	
+	var intr = null;
+	
 	var viewer = $('#product-roller .viewer').eq(0);
-	var desc = $('#product-roller .viewer-desc').eq(0)
+	var desc = $('#product-roller .viewer-desc').eq(0);
 	
 	var sprite_size = {
 		x : 440,
@@ -167,14 +169,12 @@
 	
 	var speed = 0;
 	
-	var intr = null;
-	
 	viewer.swipe({
 		swipeStatus:function(event, phase, direction, distance, duration, fingers, fingerData, currentDirection) {
 			
 			//console.log(arguments);
 			
-			clearInterval(intr);
+			window.clearInterval(intr);
 			
 			speed++;
 			
@@ -214,6 +214,8 @@
 		
 		var _p_title = btn.attr('data-product-title');
 		var _p_desc = btn.attr('data-product-desc');
+		
+		window.clearInterval(intr);
 		
 		if(product_model != '') {
 			//console.log(product_model);
