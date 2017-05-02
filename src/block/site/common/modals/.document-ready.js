@@ -5,7 +5,7 @@ $(document.body).on('click.azbn', '.content-modal', {}, function(event){
 	
 	var _target = $(event.target);
 	
-	if( _target.hasClass('close-btn') || _target.hasClass('content-modal')) {
+	if(_target.hasClass('close-btn')) { //|| _target.hasClass('content-modal')
 		event.preventDefault();
 		
 		$(document.body).removeClass('modalled');
