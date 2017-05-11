@@ -15,7 +15,7 @@
 			var _next_delay = 0;
 			
 			var _is_active = item.hasClass('_active');
-			var _cont_is_active = cont.hasClass('_has-active-item');
+			var _cont_activate_item = cont.hasClass('_activate-item');
 			
 			var _p = 2;
 			
@@ -23,7 +23,14 @@
 				_p = 3.4;
 			}
 			
-			if(!_is_active) {
+			if(_cont_activate_item) {
+				
+				
+				
+			} else if(!_is_active) {
+				
+				cont
+					.addClass('_activate-item');
 				
 				if(_active.length) {
 					
@@ -54,13 +61,15 @@
 				setTimeout(function(){
 					
 					item.addClass('_active');
+					cont
+						.removeClass('_activate-item');
 					
 				}, _next_delay + 400);
 				
 			} else {
 				
 				cont
-					.removeClass('_has-active-item')
+					.removeClass('_activate-item')
 					.find('.item._active')
 						.removeClass('_active');
 				
