@@ -170,6 +170,10 @@
 	var speed = 0;
 	
 	viewer.swipe({
+		//maxTimeThreshold : 999,
+		//triggerOnTouchEnd : false,
+		//threshold : 300,
+		triggerOnTouchLeave : true,
 		swipeStatus:function(event, phase, direction, distance, duration, fingers, fingerData, currentDirection) {
 			
 			//console.log(arguments);
@@ -194,6 +198,10 @@
 			
 		}
 	});
+	
+	viewer.on('mouseleave', function(event){
+		viewer.trigger('keyup');
+	})
 	
 	/*
 	intr = setInterval(function(){
