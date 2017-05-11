@@ -15,6 +15,7 @@
 			var _next_delay = 0;
 			
 			var _is_active = item.hasClass('_active');
+			var _cont_is_active = cont.hasClass('_has-active-item');
 			
 			var _p = 2;
 			
@@ -58,7 +59,10 @@
 				
 			} else {
 				
-				cont.find('.item._active').removeClass('_active');
+				cont
+					.removeClass('_has-active-item')
+					.find('.item._active')
+						.removeClass('_active');
 				
 				$('.product-list .product-link.js-click').removeClass('_active');
 				
