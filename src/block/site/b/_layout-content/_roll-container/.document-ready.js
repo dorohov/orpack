@@ -260,7 +260,7 @@
 				
 				intr = setInterval(function(){
 					loadSprite(1);
-				}, 60);
+				}, 40);
 				
 				$.Azbn7.body.removeClass('_preloading');
 				
