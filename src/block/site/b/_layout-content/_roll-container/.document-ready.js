@@ -195,7 +195,7 @@
 			
 			speed++;
 			
-			if((speed % 2) == 1) {
+			//if((speed % 2) == 1) {
 				
 				if(currentDirection == 'left') {
 					
@@ -207,7 +207,7 @@
 					
 				}
 				
-			}
+			//}
 			
 		}
 	});
