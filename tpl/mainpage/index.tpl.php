@@ -91,6 +91,7 @@ function __theme__product__tpl($p) {
 	
 </div>
 
+<!--
 <div class="product-list b-container _limit-width " >
 	
 	<div class="" >
@@ -136,3 +137,4 @@ function __theme__product__tpl($p) {
 	</div>
 	
 </div>
+-->

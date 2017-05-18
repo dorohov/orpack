@@ -29,12 +29,12 @@
 
 <script src="<?=$this->path('js');?>/modernizr.min.js" ></script>
 <script src="<?=$this->path('js');?>/device.min.js" ></script>
-<link href="<?=$this->path('css');?>/site.css" rel="stylesheet" />
+<link href="<?=$this->path('css');?>/site.css?v=<?=date('Ym');?>" rel="stylesheet" />
 <script src="<?=$this->path('js');?>/jquery.min.js" ></script>
 <script src="<?=$this->path('js');?>/jquery.azbn7.js" ></script>
 <script src="<?=$this->path('js');?>/jquery.touchSwipe.min.js" ></script>
 <!--<script src="<?=$this->path('js');?>/document-ready-azbn7-mdls.js" ></script>-->
-<script src="<?=$this->path('js');?>/document-ready.js" ></script>
+<script src="<?=$this->path('js');?>/document-ready.js?v=<?=date('Ym');?>" ></script>
 
 <?
 wp_footer();
