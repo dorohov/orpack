@@ -9,11 +9,33 @@
 	#site.size(15px);
 	#site.color(#999999);
 	
+	@media @media-size-xs {
+		flex-direction:column;
+	}
+	
+	@media @media-size-sm {
+		flex-wrap:wrap;
+	}
+	
 	& > * {
 		padding-right:40px;
+		
+		@media @media-size-xs {
+			padding-right:15px;
+			padding-left:15px;
+			padding-bottom:15px;
+		}
+		
+		@media @media-size-sm {
+			padding-right:15px;
+			padding-left:15px;
+			padding-bottom:15px;
+		}
 	}
 	
 	.product-link {
+		//white-space: nowrap;
+		
 		&._active, &:hover {
 			#site.color(@c-main-color);
 		}
