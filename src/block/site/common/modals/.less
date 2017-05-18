@@ -29,6 +29,17 @@ body.modalled {
 		align-items:center;
 	}
 	
+	.viewer-action-block {
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		position:relative;
+		#site.w(100%);
+		#site.h(auto);
+		#site.z(6);
+	}
+	
 	.white-block {
 		position:relative;
 		max-width:1070px;
@@ -42,6 +53,7 @@ body.modalled {
 		#site.bg(rgba(0,0,0,1));
 		//#site.w(100%);
 		//#site.h(70%);
+		#site.z(5);
 		
 		&.small {
 			max-width:800px;
@@ -80,6 +92,7 @@ body.modalled {
 			#site.bsize(cover);
 			#site.brep();
 			#site.bi('common/close-btn.png');
+			#site.z(7);
 			
 			/*
 			@media @media-max-767 {

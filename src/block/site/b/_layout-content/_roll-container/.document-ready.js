@@ -182,7 +182,7 @@
 	
 	var speed = 0;
 	
-	viewer.swipe({
+	viewer.closest('.viewer-action-block').swipe({
 		//maxTimeThreshold : 999,
 		//triggerOnTouchEnd : false,
 		//threshold : 300,
