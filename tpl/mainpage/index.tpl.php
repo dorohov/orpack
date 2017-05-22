@@ -93,5 +93,5 @@ function __theme__product__tpl($p) {
 
 
 <?
-the_content();
+echo c($this->post['id']);
 ?>
