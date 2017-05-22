@@ -91,50 +91,7 @@ function __theme__product__tpl($p) {
 	
 </div>
 
-<!--
-<div class="product-list b-container _limit-width " >
-	
-	<div class="" >
-		<a href="#" class="product-link js-click" data-post-id="7" >Силикагель фасованный</a>
-	</div>
-	
-	<div class="" >
-		<a href="#" class="product-link js-click" data-post-id="11" >Катушка для сварочной проволоки D-200</a>
-	</div>
-	
-	<div class="" >
-		
-		<a href="#" class="product-link js-click" data-post-id="14" >Катушка для сварочной проволоки D-300</a>
-	</div>
-	
-	<div class="" >
-		<div><a href="#" class="product-link js-click" data-post-id="16" >Биконическая катушка для широкого применения БК-125</a></div>
-	</div>
-	
-	<div class="" >
-		<div>Цилиндрическая катушка для широкого применения</div>
-		<div class="space10" ></div>
-		<div class="grid grid-12" >
-			<div class="col-xs-6 col-sm-6 col-md-6 col-dl-6 col-lg-6" >
-				<a href="#" class="product-link js-click" data-post-id="18" >К-100</a>
-			</div>
-			<div class="col-xs-6 col-sm-6 col-md-6 col-dl-6 col-lg-6" >
-				<a href="#" class="product-link js-click" data-post-id="24" >К-200</a>
-			</div>
-			<div class="col-xs-6 col-sm-6 col-md-6 col-dl-6 col-lg-6" >
-				<a href="#" class="product-link js-click" data-post-id="20" >К-125</a>
-			</div>
-			<div class="col-xs-6 col-sm-6 col-md-6 col-dl-6 col-lg-6" >
-				<a href="#" class="product-link js-click" data-post-id="26" >К-250</a>
-			</div>
-			<div class="col-xs-6 col-sm-6 col-md-6 col-dl-6 col-lg-6" >
-				<a href="#" class="product-link js-click" data-post-id="22" >К-160</a>
-			</div>
-			<div class="col-xs-6 col-sm-6 col-md-6 col-dl-6 col-lg-6" >
-				<a href="#" class="product-link js-click" data-post-id="28" >КНК 01-001</a>
-			</div>
-		</div>
-	</div>
-	
-</div>
--->
+
+<?
+the_content();
+?>
