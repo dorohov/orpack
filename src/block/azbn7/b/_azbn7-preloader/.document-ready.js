@@ -15,6 +15,7 @@
 			
 			if(block.data('is_loaded') && is_timed) {
 				$.Azbn7.body.removeClass('_preloading');
+				$.Azbn7.body.find('.roll-container').removeClass('_before-loading');
 			}
 			
 		});

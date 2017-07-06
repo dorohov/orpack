@@ -17,6 +17,8 @@
 			var _is_active = item.hasClass('_active');
 			var _cont_activate_item = cont.hasClass('_activate-item');
 			
+			//cont.removeClass('_before-loading');
+			
 			var _p = 2;
 			
 			if($('html').hasClass('msie')) {

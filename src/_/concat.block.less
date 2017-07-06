@@ -1335,13 +1335,14 @@ body.modalled {
 .roll-container {
 	//cursor:move;
 	transform-origin:center center;
-	transition:all @trans-speed ease;
+	transition:all @trans-speed * 1.5 ease;
 	position:relative;
 	display:flex;
 	flex-direction:row;
 	flex-wrap:nowrap;
 	justify-content:center;
 	align-content:center;
+	transform:translate(0%);
 	//#site.w(100%);
 	//#site.h(100%);
 	
@@ -1359,6 +1360,12 @@ body.modalled {
 		justify-content:flex-start;
 		padding-top:50px;
 		padding-bottom:0px;
+	}
+	
+	&._before-loading {
+		//transition:all @trans-speed ease;
+		transform:translate(75%);
+		//transform-delay:@trans-speed * 20;
 	}
 	
 	.item {
