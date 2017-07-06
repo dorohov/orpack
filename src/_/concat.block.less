@@ -1089,6 +1089,7 @@ select[multiple] {
 	
 	.product-link {
 		//white-space: nowrap;
+		#site.bold();
 		
 		&._active, &:hover {
 			#site.color(@c-main-color);
@@ -1800,6 +1801,7 @@ body.modalled {
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;
+	align-items:center;
 	
 	@media @media-size-xs {
 		flex-direction:row;
@@ -1956,6 +1958,7 @@ body.modalled {
 		display:inline-flex;
 		align-items: center;
 		vertical-align:middle;
+		#site.bold();
 		#site.calcFS(14, 14);
 		#site.uppercase();
 		#site.h(100%);
